@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<addon addon_id="jayson_DFS" title="[JF] Default Signature" version_string="1.0.0" version_id="1" url="https://jaysonfong.me/" install_callback_class="" install_callback_method="" uninstall_callback_class="" uninstall_callback_method="">
+  <admin_navigation/>
+  <admin_permissions/>
+  <admin_style_properties/>
+  <admin_templates/>
+  <admin_template_modifications/>
+  <code_events/>
+  <code_event_listeners>
+    <listener event_id="load_class_controller" execute_order="10" callback_class="jayson_DFS_Listener" callback_method="Listen" active="1" hint="XenForo_ControllerPublic_Register" description=""/>
+  </code_event_listeners>
+  <cron/>
+  <email_templates/>
+  <email_template_modifications/>
+  <optiongroups>
+    <group group_id="jayson_DFS" display_order="1" debug_only="0"/>
+    <option option_id="jayson_dfs_signature" edit_format="textbox" data_type="string" can_backup="1">
+      <default_value></default_value>
+      <edit_format_params>rows=2</edit_format_params>
+      <sub_options></sub_options>
+      <relation group_id="jayson_DFS" display_order="110"/>
+    </option>
+  </optiongroups>
+  <permissions>
+    <permission_groups/>
+    <permissions/>
+    <interface_groups/>
+  </permissions>
+  <phrases>
+    <phrase title="option_group_jayson_DFS" version_id="1" version_string="1.0.0"><![CDATA[[JF] Default Signature]]></phrase>
+    <phrase title="option_group_jayson_DFS_description" version_id="1" version_string="1.0.0"><![CDATA[]]></phrase>
+    <phrase title="option_jayson_dfs_signature" version_id="1" version_string="1.0.0"><![CDATA[Default Signature]]></phrase>
+    <phrase title="option_jayson_dfs_signature_explain" version_id="1" version_string="1.0.0"><![CDATA[This signature will be applied to all new members created through the public registration system. Leave this blank you do not want to set a default signature.<hr /><strong>Variables</strong><br/><ul><li>{username} - User's Username</li><li>{user_id} - User's ID</li><li>{email} - User's Email</li><li>{gender} - User's Gender</li><li>{timezone} - User's Timezone</li></ul>]]></phrase>
+  </phrases>
+  <route_prefixes/>
+  <style_properties/>
+  <templates/>
+  <public_template_modifications/>
+  <bb_code_media_sites/>
+  <bb_codes/>
+</addon>
