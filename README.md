@@ -1,5 +1,10 @@
 # XenForo-Default-Signature
 Set a default signature applied to newly registered members.
 
-Set a default signature for your new members with five variables of {username}, {user_id}, {email}, {gender}, and {timezone}.
-
+## Variables
+- **{username}** - User's Username
+- **{user_id}** - User's ID
+- **{email}** - User's Email
+- **{gender}** - User's Gender
+- **{timezone}** - User's Timezone
+- **{customField.***customFieldId***}** - Custom Field Data
